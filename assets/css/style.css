@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("");
+body {
+  background: url(../img/road-trip.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Lato', sans-serif; }
+
+header {
+  color: white;
+  margin-top: 45px; }
+  header nav {
+    float: right; }
+    header nav .menu-item {
+      text-transform: uppercase;
+      margin-right: 40px;
+      cursor: pointer;
+      color: white; }
+      header nav .menu-item:hover {
+        color: #b8b8b8;
+        transition: all 0.3s ease; }
+      header nav .menu-item:active {
+        color: #8c8c8c; }
+
+#main-logo {
+  width: 120px;
+  margin-left: 40px; }
+  @media screen and (max-width: 768px) {
+    #main-logo {
+      margin: auto;
+      display: block; } }
+
+.center {
+  text-align: center; }
+
+.white-color {
+  color: white; }
+
+.box-legend {
+  color: white;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.58);
+  display: inline-block;
+  padding: 10px;
+  cursor: default;
+  border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  margin-left: 2px; }
+
+.fifth-filter {
+  background-color: white;
+  color: #a5aaad;
+  width: 19%;
+  padding: 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  display: inline-block; }
+  .fifth-filter .glyphicon {
+    float: right;
+    margin-top: 5px; }
+  @media screen and (max-width: 768px) {
+    .fifth-filter {
+      width: 100%; } }
+
+div#filters {
+  background: white; }
+
+.fifth-filter {
+  border-right: 1px solid #d7d9d6;
+  background: white; }
+  .fifth-filter:hover {
+    background: #ebebeb;
+    transition: all 0.3s ease; }
+  .fifth-filter:active {
+    background: #bfbfbf; }
+
+.fifth-filter.left {
+  border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px; }
+
+.fifth-filter.button {
+  width: 20%;
+  border-right: none; }
+  @media screen and (max-width: 768px) {
+    .fifth-filter.button {
+      width: 100%; } }
+
+#filters {
+  background: white;
+  border-radius: 5px;
+  -ms-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 5px solid #f5f0e8; }
+
+.button {
+  color: white;
+  text-decoration: none;
+  padding: 9px 10px;
+  border-radius: 2px;
+  -ms-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  text-transform: uppercase; }
+
+.button-green {
+  background: #41c848;
+  border-bottom: 3px solid #2a9230; }
+  .button-green:hover {
+    background: #32ae39;
+    transition: all 0.3s ease; }
+  .button-green:active {
+    background: #1f6b23; }
+
+#chat-button {
+  background: #435cff;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px; }
+
+#links {
+  color: white;
+  display: inline-block;
+  position: fixed;
+  bottom: 10px;
+  left: 40px;
+  cursor: pointer; }
+
+#logos-container {
+  color: white;
+  opacity: .9;
+  text-transform: uppercase;
+  margin-top: 150px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.47);
+  padding-bottom: 30px; }
+
+#logos-container img {
+  width: 65px;
+  margin-right: 10px;
+  margin-top: 30px; }
+
+.menu-rollover {
+  width: 33%;
+  background-color: white;
+  border-radius: 5px;
+  -ms-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+  @media screen and (max-width: 768px) {
+    .menu-rollover {
+      width: 100%; } }
+  .menu-rollover .items-scroller {
+    border-top: 1px solid #d7d9d6;
+    max-height: 100px;
+    overflow: scroll; }
+  .menu-rollover .item {
+    padding: 15px 30px;
+    width: 49%;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #435cff;
+    background: white;
+    cursor: pointer; }
+    .menu-rollover .item:hover {
+      background: #ebebeb;
+      transition: all 0.3s ease; }
+    .menu-rollover .item:active {
+      background: #bfbfbf; }
+  .menu-rollover #most-searched {
+    padding: 10px 30px;
+    color: #a5aaad; }
+  .menu-rollover #see-all {
+    color: white;
+    background-color: #8dde92;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0;
+    border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px; }
+
+#mobile-menu {
+  position: fixed;
+  top: 40px;
+  right: 40px; }
+
+/*# sourceMappingURL=style.css.map */

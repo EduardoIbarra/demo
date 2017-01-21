@@ -1,0 +1,37 @@
+@mixin button-bg($bg) {
+  background: $bg;
+  border-bottom: 3px solid darken($bg,15%);
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  }
+}
+@mixin link-fade($co) {
+  color: $co;
+  &:hover {
+    color:darken($co,28%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    color:darken($co,45%);
+  }
+}
+@mixin  border-radius($radius){
+  border-radius: $radius;
+  -ms-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+@mixin darken-hover($bg) {
+  background: $bg;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  }
+}

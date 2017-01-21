@@ -1,0 +1,182 @@
+@import 'colors';
+@import "mixins";
+@import "sizes";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('');
+body{
+  background: url(../img/road-trip.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+}
+header{
+  color: white;
+  margin-top: 45px;
+  nav{
+    float: right;
+    .menu-item{
+      text-transform: uppercase;
+      margin-right: 40px;
+      cursor: pointer;
+      @include link-fade(white);
+    }
+  }
+}
+#main-logo{
+  width: 120px;
+  margin-left: 40px;
+  @media screen and (max-width: $break-small) {
+    margin: auto;
+    display: block;
+  }
+}
+.center{
+  text-align: center;
+}
+.white-color{
+  color: white;
+}
+.box-legend {
+  color: white;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.58);
+  display: inline-block;
+  padding: 10px;
+  cursor: default;
+  border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  margin-left: 2px;
+}
+.fifth-filter{
+  background-color: white;
+  color: $light-gray;
+  width: 19%;
+  padding: 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  display: inline-block;
+  .glyphicon{
+    float: right;
+    margin-top: 5px;
+  }
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+  }
+}
+div#filters {
+  background: white;
+}
+.fifth-filter{
+  border-right: 1px solid $lighter-gray;
+  @include darken-hover(white);
+}
+.fifth-filter.left{
+  border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+}
+.fifth-filter.button{
+  width: 20%;
+  border-right: none;
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+  }
+}
+#filters {
+  background: white;
+  @include border-radius(5px);
+  border: 5px solid #f5f0e8;
+}
+.button {
+  color:white;
+  text-decoration:none;
+  padding:9px 10px;
+  @include border-radius(2px);
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  text-transform: uppercase;
+}
+.button-green {
+  @include button-bg($green);
+}
+#chat-button {
+  background: $blue;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+}
+#links {
+  color: white;
+  display: inline-block;
+  position: fixed;
+  bottom: 10px;
+  left: 40px;
+  cursor: pointer;
+}
+#logos-container {
+  color: white;
+  opacity: .9;
+  text-transform: uppercase;
+  margin-top: 150px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.47);
+  padding-bottom: 30px;
+}
+#logos-container img{
+  width: 65px;
+  margin-right:10px;
+  margin-top: 30px;
+}
+.menu-rollover {
+  width: 33%;
+  background-color: white;
+  @include border-radius(5px);
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+  }
+  .items-scroller{
+    border-top: 1px solid $lighter-gray;
+    max-height: 100px;
+    overflow: scroll;
+  }
+  .item {
+    padding: 15px 30px;
+    width: 49%;
+    text-transform: uppercase;
+    display: inline-block;
+    color: $blue;
+    @include darken-hover(white);
+    cursor: pointer;
+  }
+  #most-searched {
+    padding: 10px 30px;
+    color: $light-gray;
+  }
+  #see-all {
+    color: white;
+    background-color: $lighter-green;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0;
+    border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+  }
+}
+#mobile-menu {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+}
